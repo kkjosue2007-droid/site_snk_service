@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNK Service - Nettoyage Professionnel</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="#" class="logo-link">
+                <img src="images/logo1.png" alt="logo-entreprise" class="logo">
+            </a>
+        </div>
+        
+        <div class="nav-menu">
+            <a href="#accueil" class="nav-link active" data-i18n="nav_home">Accueil</a>
+            <a href="#a-propos" class="nav-link" data-i18n="nav_about">À Propos</a>
+            <a href="#services" class="nav-link" data-i18n="nav_services">Nos Services</a>
+            <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+        </div>
+
+        <div class="nav-controls">
+            <button id="lang-toggle" class="btn-icon">FR | EN</button>
+            <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme">
+                <ion-icon name="moon-outline" class="moon"></ion-icon>
+                <ion-icon name="sunny-outline" class="sun"></ion-icon>
+            </button>
+            <button class="hamburger" aria-label="Menu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Header / Accueil -->
+    <header id="accueil" class="hero">
+        <!-- Texture overlay -->
+        <div class="texture-overlay"></div>
+        <div class="hero-content reveal">
+            <h2 data-i18n="hero_title_h2">BIENVENUE CHEZ NOUS</h2>
+            <h1 data-i18n="hero_title">L'Excellence du Nettoyage</h1>
+            <p data-i18n="hero_subtitle">Domestique & Industriel.Expertise, Fiabilité, Performance.</p>
+            <a href="#contact" class="btn-primary" data-i18n="hero_btn">Demander un Devis</a>
+        </div>
+        <!-- Infinite floating indicator -->
+        <div class="scroll-indicator">
+            <ion-icon name="chevron-down-outline"></ion-icon>
+        </div>
+    </header>
+
+    <!-- À Propos -->
+    <section id="a-propos" class="section">
+        <div class="container reveal">
+            <h2 class="section-title" data-i18n="about_title">À Propos</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-i18n="about_text1">Nous sommes les leaders en nettoyage industriel et domestique. Forts de notre expertise, nous garantissons un environnement impeccable et sain pour vos espaces de vie et de travail.</p>
+                    <p data-i18n="about_text2">Chez <strong>SNK SERVICE</strong>, nous transformons vos Espaces anec 
+                    un Nettoyage en profondeur et un souci du Detail Incompaarable.</p>
+                </div>
+                <div class="about-image-placeholder float-anim">
+                    <ion-icon name="sparkles-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section bg-alt">
+        <div class="container reveal">
+            <h2 class="section-title" data-i18n="services_title">Nos Services</h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card pulse-anim">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <h3 data-i18n="srv_dom">Nettoyage Domestique</h3>
+                    <p data-i18n="srv_dom_desc">Entretien complet de votre domicile. Nous prenons soin de votre intérieur avec discrétion et efficacité.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card pulse-anim">
+                    <ion-icon name="business-outline"></ion-icon>
+                    <h3 data-i18n="srv_ind">Nettoyage Industriel</h3>
+                    <p data-i18n="srv_ind_desc">Des solutions robustes pour usines et entrepôts. Respect strict des normes de sécurité et de performance.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card pulse-anim">
+                    <ion-icon name="leaf-outline"></ion-icon>
+                    <h3 data-i18n="srv_eco">Entretien Écologique</h3>
+                    <p data-i18n="srv_eco_desc">Utilisation de méthodes et de produits respectueux de l'environnement pour un impact minimal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container reveal">
+            <h2 class="section-title" data-i18n="contact_title">Contactez-nous</h2>
+            <div class="contact-wrapper">
+                <form name="devis-nettoyage" method="post" class="contact-form" data-netlify="true">
+                    <input type="hidden" name="form-name" value="devis-nettoyage">
+                    <input type="text" placeholder="Nom complet" data-i18n-placeholder="form_name" name="nom" required>
+                    <input type="email" placeholder="Email" data-i18n-placeholder="form_email" name="email" required>
+                    <textarea placeholder="Votre message..." data-i18n-placeholder="form_message" name="message" required></textarea>
+                    <button type="submit" class="btn-primary" data-i18n="form_submit">Envoyer</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item float-anim">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <a href="https://wa.me/243 97 488 805 " target="_blank"><span>+243 97 488 805</span></a>
+                    </div>
+                    <div class="info-item float-anim" style="animation-delay: 0.5s;">
+                        <ion-icon name="mail-outline"></ion-icon>
+                           <a href="samsonnyembwe82@gmail.com" class="contact-item">
+                            <span>samsonnyembwe82@gmail.com</span></a>
+                    </div>
+                    <div class="info-item float-anim" style="animation-delay: 1s;">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Lubumbashi, Haut-Katanga, République Démocratique du Congo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 SNK Service. <span data-i18n="footer_rights">Tous droits réservés.</span></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
