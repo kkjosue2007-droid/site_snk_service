@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://snkservices.netlify.app/sitemap.xml
